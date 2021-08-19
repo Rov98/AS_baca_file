@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="50px"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CATATAN"
+            android:textSize="20sp"
+            android:id="@+id/judul"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Catat ide anda dengan cepat dan dapatkan pengingat di waktu/tempat yang tepat."
+            android:textSize="15sp"
+            android:id="@+id/judulDesk"
+            android:gravity="center"
+            android:layout_marginVertical="20px"
+            android:layout_below="@id/judul"
+            />
+
+        <Button
+            android:id="@+id/simpanfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simpan File"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/textinput"
+            />
+
+        <Button
+            android:id="@+id/hapusfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Hapus File"
+            android:layout_below="@id/textinput"
+            />
+
+        <EditText
+            android:padding="5px"
+            android:layout_marginHorizontal="20px"
+            android:layout_marginVertical="20px"
+            android:gravity="top"
+            android:id="@+id/textinput"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:inputType="textMultiLine"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_below="@id/judulDesk"
+            />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

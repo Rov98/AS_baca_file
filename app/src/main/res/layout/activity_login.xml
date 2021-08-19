@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Log in"
+            android:textFontWeight="700"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:id="@+id/logindesk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="please login with your account"
+            android:textSize="15sp"
+            android:layout_below="@id/login"
+            />
+
+        <EditText
+            android:id="@+id/txtUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50px"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="User"
+            android:layout_marginVertical="30px"
+            android:layout_below="@id/logindesk"
+            />
+
+        <EditText
+            android:id="@+id/txtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50px"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:layout_below="@id/txtUser"
+            />
+
+        <TextView
+            android:id="@+id/txtForgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:layout_marginVertical="30px"
+            android:textAlignment="center"
+            android:layout_below="@id/txtPass"
+            />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtForgot"
+            android:layout_marginHorizontal="50px"
+            android:background="#E3562A"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/btnDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_below="@id/btnLogin"
+            android:layout_marginHorizontal="50px"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
